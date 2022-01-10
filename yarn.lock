@@ -1356,7 +1356,12 @@
   resolved "https://registry.yarnpkg.com/@hashiprobr/expo-three-view/-/expo-three-view-1.0.17.tgz#02bbec3b2b064b3b906f5db27e45ba60a0ece02c"
   integrity sha512-4+03hnjz3n8Aek+fXnt/SX05iFhO2ORf8tah07Cl9uGs15PCZuz/IHWiHCimNBqT80CB6JmXLgzkw6Hd1wem8A==
 
-"@hashiprobr/react-native-paper-icon@^1.0.3":
+"@hashiprobr/react-native-paper-datetimepicker@~1.0.16":
+  version "1.0.16"
+  resolved "https://registry.yarnpkg.com/@hashiprobr/react-native-paper-datetimepicker/-/react-native-paper-datetimepicker-1.0.16.tgz#fabefcc51c2db8428483ff07b1df25179c8849b9"
+  integrity sha512-3oP9Heh650sgmvMmjRJqEBCW5eTYV6jjJf4ady96dsqQ8UGY9yGHez/Xua6ZJ4Nybox663jgS1Hqoy5ycokTiw==
+
+"@hashiprobr/react-native-paper-icon@~1.0.3":
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/@hashiprobr/react-native-paper-icon/-/react-native-paper-icon-1.0.3.tgz#454a6af1f26bcb38a56650d743375758c5f33515"
   integrity sha512-bxKuIfDXkVu4zg9wHJnd5FsziwdBpbm/nbkwqpLKQVYRWzbtp/oCYXInbzgSoWgnBsZ/GXBElmmxXunOCS8fDA==
@@ -1549,6 +1554,13 @@
     strip-ansi "^5.2.0"
     sudo-prompt "^9.0.0"
     wcwidth "^1.0.1"
+
+"@react-native-community/datetimepicker@~3.5.2":
+  version "3.5.2"
+  resolved "https://registry.yarnpkg.com/@react-native-community/datetimepicker/-/datetimepicker-3.5.2.tgz#8e6feb30f2620e5abdf565d5fe74c0c04edcf6ae"
+  integrity sha512-TWRuAtr/DnrEcRewqvXMLea2oB+YF+SbtuYLHguALLxNJQLl/RFB7aTNZeF+OoH75zKFqtXECXV1/uxQUpA+sg==
+  dependencies:
+    invariant "^2.2.4"
 
 "@react-native/assets@1.0.0":
   version "1.0.0"
@@ -7463,7 +7475,14 @@ react-native-iphone-x-helper@^1.3.1:
   resolved "https://registry.yarnpkg.com/react-native-iphone-x-helper/-/react-native-iphone-x-helper-1.3.1.tgz#20c603e9a0e765fd6f97396638bdeb0e5a60b010"
   integrity sha512-HOf0jzRnq2/aFUcdCJ9w9JGzN3gdEg0zFE4FyYlp4jtidqU03D5X7ZegGKfT1EWteR0gPBGp9ye5T5FvSWi9Yg==
 
-react-native-paper@^4.11.1:
+react-native-modal-datetime-picker@~13.0.1:
+  version "13.0.1"
+  resolved "https://registry.yarnpkg.com/react-native-modal-datetime-picker/-/react-native-modal-datetime-picker-13.0.1.tgz#c645c4dff121027f10d4717a1d19551c96fb8b11"
+  integrity sha512-uPgonEKa/nIotmboEEriTCVfWLgrtuR+fybqSw6XcPc/+ve7Q6p55cbUGKtne3+sFcelk+QHcb0aPu56+VbsJA==
+  dependencies:
+    prop-types "^15.7.2"
+
+react-native-paper@~4.11.1:
   version "4.11.1"
   resolved "https://registry.yarnpkg.com/react-native-paper/-/react-native-paper-4.11.1.tgz#da7c1b66950002d1511ac888e19fc82acec758a2"
   integrity sha512-mAQ74KUrOIcMEg1crrIsA7eXDaPk/fjvKFDLcN7gBBeV/zhhQiqc+/y6t+8STKsZutRA2U5/eB+0MBisybokmQ==

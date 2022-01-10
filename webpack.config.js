@@ -6,6 +6,7 @@ module.exports = async function (env, argv) {
         babel: {
             dangerouslyAddModulePathsToTranspile: [
                 '@hashiprobr/react-native-paper-icon',
+                '@hashiprobr/react-native-paper-datetimepicker',
                 '@hashiprobr/expo-pdf-reader',
                 '@hashiprobr/expo-three-view',
             ],
