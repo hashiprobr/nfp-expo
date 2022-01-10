@@ -5,6 +5,8 @@ module.exports = async function (env, argv) {
         ...env,
         babel: {
             dangerouslyAddModulePathsToTranspile: [
+                '@hashiprobr/react-native-paper-icon',
+                '@hashiprobr/expo-pdf-reader',
                 '@hashiprobr/expo-three-view',
             ],
         },
