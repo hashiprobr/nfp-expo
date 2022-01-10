@@ -10,14 +10,23 @@
     "web": "expo start --web"
   },
   "dependencies": {
-    "expo": "~43.0.0",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
-    "react-native": "0.64.3",
-    "react-native-web": "0.17.1"
+    "@hashiprobr/expo-three-view": "~1.0.15",
+    "@hashiprobr/react-use-mount-and-update": "~1.0.3",
+    "@hashiprobr/react-use-refs": "~1.0.9",
+    "expo": "~43.0.5",
+    "expo-asset": "<8.4.5",
+    "expo-gl": "~11.0.3",
+    "expo-three": "~6.0.1",
+    "react": "~17.0.1",
+    "react-dom": "~17.0.1",
+    "react-native": "^0.64.3",
+    "react-native-gesture-handler": "~1.10.2",
+    "react-native-reanimated": "~2.2.0",
+    "react-native-web": "^0.17.1",
+    "three": "^0.136.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.9",
+    "@babel/core": "~7.12.9",
     "@expo/webpack-config": "^0.16.15"
   }
 }

@@ -5,7 +5,7 @@ module.exports = async function (env, argv) {
         ...env,
         babel: {
             dangerouslyAddModulePathsToTranspile: [
-                '@hashiprobr/react-native-paper-datetimepicker',
+                '@hashiprobr/expo-three-view',
             ],
         },
     }, argv);
