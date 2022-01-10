@@ -5,7 +5,10 @@ module.exports = async function (env, argv) {
         ...env,
         babel: {
             dangerouslyAddModulePathsToTranspile: [
+                '@hashiprobr/react-native-rounded-view',
+                '@hashiprobr/react-native-aspect-view',
                 '@hashiprobr/react-native-paper-icon',
+                '@hashiprobr/react-native-paper-dropdown',
                 '@hashiprobr/react-native-paper-datetimepicker',
                 '@hashiprobr/expo-pdf-reader',
                 '@hashiprobr/expo-three-view',
