@@ -7,6 +7,7 @@ module.exports = async function (env, argv) {
             dangerouslyAddModulePathsToTranspile: [
                 '@hashiprobr/react-native-rounded-view',
                 '@hashiprobr/react-native-aspect-view',
+                '@hashiprobr/react-native-aspect-image',
                 '@hashiprobr/react-native-paper-icon',
                 '@hashiprobr/react-native-paper-dropdown',
                 '@hashiprobr/react-native-paper-datetimepicker',

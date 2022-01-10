@@ -1356,7 +1356,12 @@
   resolved "https://registry.yarnpkg.com/@hashiprobr/expo-three-view/-/expo-three-view-1.0.17.tgz#02bbec3b2b064b3b906f5db27e45ba60a0ece02c"
   integrity sha512-4+03hnjz3n8Aek+fXnt/SX05iFhO2ORf8tah07Cl9uGs15PCZuz/IHWiHCimNBqT80CB6JmXLgzkw6Hd1wem8A==
 
-"@hashiprobr/react-native-aspect-view@^1.0.13":
+"@hashiprobr/react-native-aspect-image@~1.0.9":
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/@hashiprobr/react-native-aspect-image/-/react-native-aspect-image-1.0.9.tgz#a3d4ef9b23c7343892ee8b9431871119459336c1"
+  integrity sha512-IkOIbPjjhQ90hE9+s1AjnGaIIecdc5MVQgrpT1QU+A3kaZx0gD/VdrXE9IwG7wS02p0hI0rCGwXlTOZ5LTg4Ew==
+
+"@hashiprobr/react-native-aspect-view@~1.0.13":
   version "1.0.13"
   resolved "https://registry.yarnpkg.com/@hashiprobr/react-native-aspect-view/-/react-native-aspect-view-1.0.13.tgz#3e011b6096d7e6456907e400d8f841d35287ef9d"
   integrity sha512-Q4pBpC0+957fLMCte8QSYanKDbgHvUmJ7j9MGyDsRWDK3lQzMIhG34LCp14r7vO2gnmnvpg6TEE55sLnYxDUgA==
@@ -1376,7 +1381,7 @@
   resolved "https://registry.yarnpkg.com/@hashiprobr/react-native-paper-icon/-/react-native-paper-icon-1.0.3.tgz#454a6af1f26bcb38a56650d743375758c5f33515"
   integrity sha512-bxKuIfDXkVu4zg9wHJnd5FsziwdBpbm/nbkwqpLKQVYRWzbtp/oCYXInbzgSoWgnBsZ/GXBElmmxXunOCS8fDA==
 
-"@hashiprobr/react-native-rounded-view@^1.0.6":
+"@hashiprobr/react-native-rounded-view@~1.0.6":
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/@hashiprobr/react-native-rounded-view/-/react-native-rounded-view-1.0.6.tgz#14f9adbd3359fb7dbfcf1c09453799a34251d9fb"
   integrity sha512-tSYcMlrEIT5+C/JwEPhDG9pAgbd3FwCrvDxslu02RvnmbWK1tO52BydBs9uHsJsmkewygYpTLc2rgxE4fGBtvw==
