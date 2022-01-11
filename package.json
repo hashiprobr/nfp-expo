@@ -12,6 +12,7 @@
   "dependencies": {
     "@hashiprobr/expo-pdf-reader": "~1.0.5",
     "@hashiprobr/expo-three-view": "~1.0.18",
+    "@hashiprobr/expo-use-locator": "~1.0.2",
     "@hashiprobr/react-native-aspect-image": "~1.0.10",
     "@hashiprobr/react-native-aspect-view": "~1.0.13",
     "@hashiprobr/react-native-paper-datetimepicker": "~1.0.16",
@@ -26,6 +27,7 @@
     "expo-constants": "~12.1.3",
     "expo-file-system": "~13.0.3",
     "expo-gl": "~11.0.3",
+    "expo-location": "~13.0.4",
     "expo-three": "~6.0.1",
     "react": "~17.0.1",
     "react-dom": "~17.0.1",
