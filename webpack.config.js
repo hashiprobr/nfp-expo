@@ -13,6 +13,7 @@ module.exports = async function (env, argv) {
                 '@hashiprobr/react-native-paper-datetimepicker',
                 '@hashiprobr/expo-pdf-reader',
                 '@hashiprobr/expo-three-view',
+                '@hashiprobr/expo-camera',
             ],
         },
     }, argv);
