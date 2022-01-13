@@ -1361,15 +1361,20 @@
   resolved "https://registry.yarnpkg.com/@hashiprobr/expo-three-view/-/expo-three-view-1.0.18.tgz#54aae50f2bf2baa4aefe9cbdf73200cf73efcefb"
   integrity sha512-sn3om9SWC+G8RFPGrrQlMmhNTzZHVEpxHgnb/nGdwXSFkMgfIFU0zb4MISTvPqOMFfKsd+eqaKFibfrSiG9quQ==
 
-"@hashiprobr/expo-use-locator@~1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@hashiprobr/expo-use-locator/-/expo-use-locator-1.0.4.tgz#cb11d8642d141c43edf1e74c162284cca10ffbd2"
-  integrity sha512-mnzKCoN2PKkqi+zjQQHdn2ZHgZI5U2OKnSxAJOZJyu5KwyDkqCveM+WKPmQA4nueIvw2KNhJVy3ynBjxxlDuow==
+"@hashiprobr/expo-use-camera@~1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@hashiprobr/expo-use-camera/-/expo-use-camera-1.0.3.tgz#d8102ea0b2fef04310f3565688691b582c92185f"
+  integrity sha512-o6ZVgHxTo5spiWGrhog2HB08d5uqtwjVaskG7YAfZJwCSRHzr572MjzqZd7qmE5RxMvVRlPhkBEM9p1oRd7VqA==
 
-"@hashiprobr/expo-use-scanner@~1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@hashiprobr/expo-use-scanner/-/expo-use-scanner-1.0.6.tgz#93a9beed861b2c828cdf18a977f8e0e7dd504d74"
-  integrity sha512-Mpasz24RQ9Ygpop80KqSwF074cj2LIizBWs+SgEecLBuJohoDbg5a4Yfrp+pR2AOUdHchN65o0yhDymTU/Avjw==
+"@hashiprobr/expo-use-locator@~1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@hashiprobr/expo-use-locator/-/expo-use-locator-1.0.5.tgz#8a87cd27fb3e93fa4ef4c9bed3cd3ad4df336f7d"
+  integrity sha512-k/xXVsYMIYICo0yQFhwTg3oSiKJPqabfwuFGu/c0+n8LtRLsD4RfIGYTxiupearTbD/+VhMFa3geXvoX+BEcYQ==
+
+"@hashiprobr/expo-use-scanner@~1.0.7":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@hashiprobr/expo-use-scanner/-/expo-use-scanner-1.0.7.tgz#4275b191b872c7c6f3adc7f2b3394ad2777a6a35"
+  integrity sha512-dw9vv+N9X3Ril7ZPUm674gAqS0nCaml/TLyfEAeYeRr+LoiVKLMCzUx1CygzI5FOQCKJ7PoyEbrbxtjASKVGYQ==
 
 "@hashiprobr/react-native-aspect-image@~1.0.10":
   version "1.0.10"
@@ -3962,6 +3967,19 @@ expo-gl@~11.0.3:
     expo-gl-cpp "~11.0.1"
     expo-modules-core "~0.4.4"
     invariant "^2.2.4"
+
+expo-image-loader@~3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/expo-image-loader/-/expo-image-loader-3.0.0.tgz#5ada47a0f90f8dec1777520d36e35c65155d9ea9"
+  integrity sha512-r4D+uLCf5vm5A2JIbF1Bc9FjYKrYGSLShbFB1MUvZ4BpSXJPRsprYZ9veUBVzzhh8hr23ahTFjMzp3nC57iREw==
+
+expo-image-manipulator@~10.1.2:
+  version "10.1.2"
+  resolved "https://registry.yarnpkg.com/expo-image-manipulator/-/expo-image-manipulator-10.1.2.tgz#1053d26f30d5c690ebe2d012b98ac3f0ae57b51a"
+  integrity sha512-biMGVL7kzCVFIUpNVVf8FHcPzKPHK8RPooe8R9mjBIPV+FimVF6mIBdtTGe9Fw7iFm+jyRJONG2lZOrdBEUk+A==
+  dependencies:
+    expo-image-loader "~3.0.0"
+    expo-modules-core "~0.4.4"
 
 expo-keep-awake@~10.0.0:
   version "10.0.1"

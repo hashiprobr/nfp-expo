@@ -14,6 +14,7 @@ module.exports = async function (env, argv) {
                 '@hashiprobr/expo-pdf-reader',
                 '@hashiprobr/expo-three-view',
                 '@hashiprobr/expo-camera',
+                '@hashiprobr/expo-use-camera',
             ],
         },
     }, argv);
