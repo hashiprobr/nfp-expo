@@ -1361,20 +1361,25 @@
   resolved "https://registry.yarnpkg.com/@hashiprobr/expo-three-view/-/expo-three-view-1.0.18.tgz#54aae50f2bf2baa4aefe9cbdf73200cf73efcefb"
   integrity sha512-sn3om9SWC+G8RFPGrrQlMmhNTzZHVEpxHgnb/nGdwXSFkMgfIFU0zb4MISTvPqOMFfKsd+eqaKFibfrSiG9quQ==
 
-"@hashiprobr/expo-use-camera@~1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@hashiprobr/expo-use-camera/-/expo-use-camera-1.0.3.tgz#d8102ea0b2fef04310f3565688691b582c92185f"
-  integrity sha512-o6ZVgHxTo5spiWGrhog2HB08d5uqtwjVaskG7YAfZJwCSRHzr572MjzqZd7qmE5RxMvVRlPhkBEM9p1oRd7VqA==
+"@hashiprobr/expo-use-camera@~1.0.8":
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/@hashiprobr/expo-use-camera/-/expo-use-camera-1.0.8.tgz#6ad37f6323d1dc6967f43ceff9eb1d3e7585711c"
+  integrity sha512-g+HekvVv8uxN3eG6NgM9jkaNZkpHfyxadirE86fEYy8YswNnTIB4yNIrJPL+G7+twJPgC2MYo5xPP38xi3k4xg==
 
 "@hashiprobr/expo-use-locator@~1.0.5":
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/@hashiprobr/expo-use-locator/-/expo-use-locator-1.0.5.tgz#8a87cd27fb3e93fa4ef4c9bed3cd3ad4df336f7d"
   integrity sha512-k/xXVsYMIYICo0yQFhwTg3oSiKJPqabfwuFGu/c0+n8LtRLsD4RfIGYTxiupearTbD/+VhMFa3geXvoX+BEcYQ==
 
-"@hashiprobr/expo-use-scanner@~1.0.7":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@hashiprobr/expo-use-scanner/-/expo-use-scanner-1.0.7.tgz#4275b191b872c7c6f3adc7f2b3394ad2777a6a35"
-  integrity sha512-dw9vv+N9X3Ril7ZPUm674gAqS0nCaml/TLyfEAeYeRr+LoiVKLMCzUx1CygzI5FOQCKJ7PoyEbrbxtjASKVGYQ==
+"@hashiprobr/expo-use-picker@~1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@hashiprobr/expo-use-picker/-/expo-use-picker-1.0.2.tgz#0e2a76dfcce2ff1de99d17d25852500c36eacf93"
+  integrity sha512-kKvBeKYLjFRq7tBK1Ebs4xpKRFNuF5fuJLwh0NzZCdpG/ijjIVo1IXy8OSFOLT0EfmfrKSifTjtggq/lt3HPzA==
+
+"@hashiprobr/expo-use-scanner@~1.0.9":
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/@hashiprobr/expo-use-scanner/-/expo-use-scanner-1.0.9.tgz#c0bfd316ea3dceec42efb5cf802857088617c8a6"
+  integrity sha512-jKGmG2AHs2GdfpZyr1HIN55hkebH2uVRUdENJm9OeMtIEe9IRQYIfveLtYLxyvdf4oH85dn5zbJJykc0eDHSdA==
 
 "@hashiprobr/react-native-aspect-image@~1.0.10":
   version "1.0.10"
@@ -1405,6 +1410,11 @@
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/@hashiprobr/react-native-rounded-view/-/react-native-rounded-view-1.0.6.tgz#14f9adbd3359fb7dbfcf1c09453799a34251d9fb"
   integrity sha512-tSYcMlrEIT5+C/JwEPhDG9pAgbd3FwCrvDxslu02RvnmbWK1tO52BydBs9uHsJsmkewygYpTLc2rgxE4fGBtvw==
+
+"@hashiprobr/react-use-loader@~1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@hashiprobr/react-use-loader/-/react-use-loader-1.0.2.tgz#9851bc54746b173e4c2a01a8ad1e96bbf5250033"
+  integrity sha512-PxijF4JUQ5u20vYn+OohSnnvAE99PQbT+tjh4k4NFXsFDieAtDTUGflx9UlI2gwT2xvSwQqd0MGBmY6gqcpMUA==
 
 "@hashiprobr/react-use-mount-and-update@~1.0.4":
   version "1.0.4"
@@ -3628,9 +3638,9 @@ ee-first@1.1.1:
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
 electron-to-chromium@^1.3.564, electron-to-chromium@^1.4.17:
-  version "1.4.44"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.44.tgz#8a41923afdd6ef5ddabe001626036ba5d1d64ae6"
-  integrity sha512-tHGWiUUmY7GABK8+DNcr474cnZDTzD8x1736SlDosVH8+/vRJeqfaIBAEHFtMjddz/0T4rKKYsxEc8BwQRdBpw==
+  version "1.4.45"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.45.tgz#cf1144091d6683cbd45a231954a745f02fb24598"
+  integrity sha512-czF9eYVuOmlY/vxyMQz2rGlNSjZpxNQYBe1gmQv7al171qOIhgyO9k7D5AKlgeTCSPKk+LHhj5ZyIdmEub9oNg==
 
 elliptic@^6.5.3:
   version "6.5.4"
@@ -3904,9 +3914,9 @@ expo-asset@<8.4.5:
     url-parse "^1.4.4"
 
 expo-asset@~8.4.3:
-  version "8.4.5"
-  resolved "https://registry.yarnpkg.com/expo-asset/-/expo-asset-8.4.5.tgz#730579b48408222c210beface7508224683f1740"
-  integrity sha512-4E+VzFdgSjeCC+x80VuL+moY04U19SRV6vrL8DekQSyPbwkNR1QdvSx/7O7XTOspB9duwebQ1ue7JHFWOwyaMQ==
+  version "8.4.6"
+  resolved "https://registry.yarnpkg.com/expo-asset/-/expo-asset-8.4.6.tgz#1c40e9badac66dbd3d2be2810711937e5b9b09bd"
+  integrity sha512-Kpzcmmf1lceHnZkAdJOvq7l7SU/hCL59vAj2xUZS66U6lFkUf7LNEA/NzILA56loCd4cka5ShYlWs+BMchyFDQ==
   dependencies:
     blueimp-md5 "^2.10.0"
     invariant "^2.2.4"
@@ -3930,6 +3940,15 @@ expo-constants@~12.1.3:
   integrity sha512-HXlMTPn9pnJdMju3WcwX4oEB7EOECOTzdIPaG3JEluygqzafwKLMR8BE82+64jgAxlGIWZsYl+3Ni9wuTFQeYw==
   dependencies:
     "@expo/config" "^5.0.9"
+    expo-modules-core "~0.4.4"
+    uuid "^3.3.2"
+
+expo-document-picker@~10.0.3:
+  version "10.0.3"
+  resolved "https://registry.yarnpkg.com/expo-document-picker/-/expo-document-picker-10.0.3.tgz#80697fd13dcb6d4975658f8c7eddc24af2a94b76"
+  integrity sha512-upH2A+1s7mf54rWDDpngNWITKQDd/eiMOjprfcnoRj1/GTx6crMDKaVd9vNEir0z2K7ZYULj8hapGAAMHLTglA==
+  dependencies:
+    "@expo/config-plugins" "^4.0.2"
     expo-modules-core "~0.4.4"
     uuid "^3.3.2"
 
