@@ -11,6 +11,32 @@ simplifying the usage of popular features. The dependency versions were
 carefully chosen to avoid runtime errors and warnings.
 
 
+Default dependencies
+--------------------
+
+* [React Navigation](https://reactnavigation.org/)
+
+* [Stack Navigator](https://reactnavigation.org/docs/stack-navigator/)
+
+* [Drawer Navigator](https://reactnavigation.org/docs/drawer-navigator/)
+
+* [Material Bottom Tabs
+  Navigator](https://reactnavigation.org/docs/material-bottom-tab-navigator/)
+
+* [Material Top Tabs
+  Navigator](https://reactnavigation.org/docs/material-top-tab-navigator/)
+
+* [Fluid Transitions for React
+  Navigation](https://github.com/fram-x/FluidTransitions)
+
+* [react-navigation-collapsible](https://github.com/benevbright/react-navigation-collapsible)
+
+* [React Native Paper](https://callstack.github.io/react-native-paper/)
+
+* [React Native Bottom
+  Sheet](https://gorhom.github.io/react-native-bottom-sheet/)
+
+
 Additional components
 ---------------------
 
