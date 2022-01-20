@@ -28,8 +28,10 @@ export default {
         notification: '#ff80ab',
     },
     screenOptions: {
-        headerStyle: { backgroundColor: '#BB86FC' },
+        ...Default.screenOptions,
+        headerStyle: {
+            backgroundColor: '#BB86FC',
+        },
         headerTintColor: '#000000',
-        headerTitleStyle: {},
     },
 };

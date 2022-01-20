@@ -1,6 +1,7 @@
 // https://reactnavigation.org/docs/themes/#basic-usage
 // https://github.com/react-navigation/react-navigation/blob/main/packages/native/src/theming/DefaultTheme.tsx
 // https://reactnavigation.org/docs/headers/#adjusting-header-styles
+// https://github.com/react-navigation/react-navigation/blob/main/packages/elements/src/Header/HeaderTitle.tsx
 
 // https://callstack.github.io/react-native-paper/theming.html#applying-a-theme-to-the-whole-app
 // https://github.com/callstack/react-native-paper/blob/main/src/styles/DefaultTheme.tsx
@@ -28,9 +29,25 @@ export default {
         notification: '#f50057',
     },
     screenOptions: {
-        headerStyle: { backgroundColor: '#6200ee' },
+        headerStyle: {
+            backgroundColor: '#6200ee',
+        },
         headerTintColor: '#ffffff',
-        headerTitleStyle: {},
+        headerTitleStyle: Platform.select({
+            ios: {
+                fontSize: 17,
+                fontWeight: '600',
+            },
+            android: {
+                fontSize: 20,
+                fontFamily: 'sans-serif-medium',
+                fontWeight: 'normal',
+            },
+            default: {
+                fontSize: 18,
+                fontWeight: '500',
+            },
+        }),
     },
     fonts: Platform.select({
         web: {
