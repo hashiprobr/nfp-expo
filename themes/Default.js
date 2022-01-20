@@ -1,3 +1,12 @@
+// https://reactnavigation.org/docs/themes/#basic-usage
+// https://github.com/react-navigation/react-navigation/blob/main/packages/native/src/theming/DefaultTheme.tsx
+// https://reactnavigation.org/docs/headers/#adjusting-header-styles
+
+// https://callstack.github.io/react-native-paper/theming.html#applying-a-theme-to-the-whole-app
+// https://github.com/callstack/react-native-paper/blob/main/src/styles/DefaultTheme.tsx
+// https://github.com/callstack/react-native-paper/blob/main/src/styles/colors.tsx
+// https://github.com/callstack/react-native-paper/blob/main/src/styles/fonts.tsx
+
 import { Platform } from 'react-native';
 
 export default {
@@ -8,24 +17,20 @@ export default {
         accent: '#03dac4',
         background: '#f6f6f6',
         surface: '#ffffff',
-        card: 'rgb(255, 255, 255)',
         error: '#B00020',
+        card: 'rgb(255, 255, 255)',
         text: '#000000',
         disabled: 'rgba(0, 0, 0, 0.26)',
         placeholder: 'rgba(0, 0, 0, 0.54)',
-        border: 'rgb(216, 216, 216)',
         backdrop: 'rgba(0, 0, 0, 0.5)',
         onSurface: '#000000',
+        border: 'rgb(216, 216, 216)',
         notification: '#f50057',
     },
     screenOptions: {
-        headerStyle: {
-            backgroundColor: '#6200ee',
-        },
+        headerStyle: { backgroundColor: '#6200ee' },
         headerTintColor: '#ffffff',
-        headerTitleStyle: {
-            color: '#ffffff',
-        },
+        headerTitleStyle: {},
     },
     fonts: Platform.select({
         web: {
