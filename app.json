@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "frontend",
-    "slug": "frontend",
+    "name": "nfp-expo",
+    "slug": "nfp-expo",
     "version": "0.1.0",
     "orientation": "default",
     "icon": "./assets/icon.png",
