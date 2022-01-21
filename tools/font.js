@@ -1,4 +1,4 @@
-import modules from './scripts/requireFonts';
+import modules from '../scripts/requireFonts';
 
 import GoogleFonts from '../themes/GoogleFonts';
 

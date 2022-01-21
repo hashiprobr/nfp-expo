@@ -20,8 +20,8 @@ import Main from './components/Main';
 
 import { getFonts, useStyles } from './tools';
 
-import CustomDefaultTheme from './themes/Default';
-import CustomDarkTheme from './themes/Dark';
+import CustomDefaultTheme from './themes/DefaultTheme';
+import CustomDarkTheme from './themes/DarkTheme';
 
 import settings from './settings.json';
 
