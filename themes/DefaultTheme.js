@@ -10,6 +10,8 @@
 
 import { Platform } from 'react-native';
 
+import { configureFonts } from 'react-native-paper';
+
 export default {
     dark: false,
     roundness: 4,
@@ -49,7 +51,7 @@ export default {
             },
         }),
     },
-    fonts: Platform.select({
+    fonts: configureFonts({
         web: {
             regular: {
                 fontFamily: 'Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif',
