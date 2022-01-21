@@ -2,7 +2,7 @@ import 'react-native-gesture-handler';
 
 import merge from 'deepmerge';
 
-import React, { createContext, useContext, useState, useMemo } from 'react';
+import React, { useState, useMemo } from 'react';
 
 import { Platform } from 'react-native';
 
@@ -18,7 +18,7 @@ import AppLoading from 'expo-app-loading';
 
 import Main from './components/Main';
 
-import { getFonts, useStyles } from './tools';
+import { getFonts, useStyles, ThemeContext, ErrorBoundary } from './tools';
 
 import CustomDefaultTheme from './themes/DefaultTheme';
 import CustomDarkTheme from './themes/DarkTheme';
@@ -43,27 +43,6 @@ const fonts = getFonts();
 
 const defaultTheme = merge.all([NavigationDefaultTheme, PaperDefaultTheme, CustomDefaultTheme]);
 const darkTheme = merge.all([NavigationDarkTheme, PaperDarkTheme, CustomDarkTheme]);
-
-const ThemeContext = createContext();
-
-function useDark() {
-    return useContext(ThemeContext);
-}
-
-class ErrorBoundary extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = false;
-    }
-    static getDerivedStateFromError() {
-        return true;
-    }
-    render() {
-        return this.state ? null : this.props.children;
-    }
-}
-
-export { useDark, ErrorBoundary };
 
 export default function App() {
     const loaded = useStyles(fonts);
