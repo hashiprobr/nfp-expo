@@ -1,5 +1,5 @@
 {
-  "name": "nfp-expo",
+  "name": "nfp-expo-css",
   "version": "0.1.0",
   "private": true,
   "main": "node_modules/expo/AppEntry.js",
@@ -76,6 +76,8 @@
     "@babel/core": "~7.12.9",
     "@expo/webpack-config": "^0.16.15",
     "chokidar": "~3.5.3",
-    "concurrently": "~7.0.0"
+    "concurrently": "~7.0.0",
+    "css-to-react-native": "~3.0.0",
+    "postcss": "~8.4.5"
   }
 }
