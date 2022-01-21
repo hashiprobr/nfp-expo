@@ -2,11 +2,12 @@ nfp-expo
 ========
 
 **[Not-For-Production](https://github.com/hashiprobr/nfp) Expo template based on
-React Navigation, React Native Paper, and additional components and hooks.**
+React Navigation, React Native Paper, and additional components, hooks, and
+tools.**
 
 If your project is a class assignment or a simple prototype, use this template
 to have React Navigation and React Native Paper support with minimum
-boilerplate, as well as components and hooks specifically designed for
+boilerplate, as well as components, hooks, and tools specifically designed for
 simplifying the usage of popular features. The dependency versions were
 carefully chosen to avoid runtime errors and warnings.
 
@@ -15,6 +16,8 @@ Default dependencies
 --------------------
 
 * [React Navigation](https://reactnavigation.org/)
+
+* [Elements Library](https://reactnavigation.org/docs/elements)
 
 * [Stack Navigator](https://reactnavigation.org/docs/stack-navigator/)
 
@@ -35,6 +38,10 @@ Default dependencies
 
 * [React Native Bottom
   Sheet](https://gorhom.github.io/react-native-bottom-sheet/)
+
+* [Expo StatusBar](https://docs.expo.dev/versions/latest/sdk/status-bar/)
+
+* [Expo AppLoading](https://docs.expo.dev/versions/latest/sdk/app-loading/)
 
 
 Additional components

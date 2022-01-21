@@ -2,7 +2,7 @@ import 'react-native-gesture-handler';
 
 import merge from 'deepmerge';
 
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useContext, useState, useMemo } from 'react';
 
 import { Platform } from 'react-native';
 
@@ -14,15 +14,19 @@ import { Provider as PaperProvider, DefaultTheme as PaperDefaultTheme, DarkTheme
 
 import { DateTimeContainer } from '@hashiprobr/react-native-paper-datetimepicker';
 
+import AppLoading from 'expo-app-loading';
+
 import Main from './components/Main';
+
+import { getFonts, useStyles } from './tools';
 
 import CustomDefaultTheme from './themes/Default';
 import CustomDarkTheme from './themes/Dark';
 
 import settings from './settings.json';
 
-// Ignoring a specific warning in the web. This is an
-// horrible hack, but I could not find a way around it
+// Ignoring a specific warning in the web. This is a
+// terrible hack, but I could not find a way around it
 // because the warning does make sense. The problem is
 // that the library does not support react-native-web.
 
@@ -35,6 +39,8 @@ if (Platform.OS === 'web') {
     };
 }
 
+const fonts = getFonts();
+
 const defaultTheme = merge.all([NavigationDefaultTheme, PaperDefaultTheme, CustomDefaultTheme]);
 const darkTheme = merge.all([NavigationDarkTheme, PaperDarkTheme, CustomDarkTheme]);
 
@@ -44,24 +50,45 @@ function useDark() {
     return useContext(ThemeContext);
 }
 
-export { useDark };
+class ErrorBoundary extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = false;
+    }
+    static getDerivedStateFromError() {
+        return true;
+    }
+    render() {
+        return this.state ? null : this.props.children;
+    }
+}
+
+export { useDark, ErrorBoundary };
 
 export default function App() {
-    const value = useState(settings.dark);
+    const loaded = useStyles(fonts);
 
+    const [dark, setDark] = useState(settings.dark);
+    const value = useMemo(() => [dark, setDark], [dark]);
     const theme = value[0] ? darkTheme : defaultTheme;
 
     return (
-        <ThemeContext.Provider value={value}>
-            <PaperProvider theme={theme}>
-                <SafeAreaProvider>
-                    <NavigationContainer theme={theme}>
-                        <DateTimeContainer theme={theme}>
-                            <Main />
-                        </DateTimeContainer>
-                    </NavigationContainer>
-                </SafeAreaProvider>
-            </PaperProvider>
-        </ThemeContext.Provider>
+        loaded.every((value) => value) ? (
+            <ThemeContext.Provider value={value}>
+                <PaperProvider theme={theme}>
+                    <SafeAreaProvider>
+                        <NavigationContainer theme={theme}>
+                            <DateTimeContainer theme={theme}>
+                                <ErrorBoundary>
+                                    <Main />
+                                </ErrorBoundary>
+                            </DateTimeContainer>
+                        </NavigationContainer>
+                    </SafeAreaProvider>
+                </PaperProvider>
+            </ThemeContext.Provider>
+        ) : (
+            <AppLoading />
+        )
     );
 }

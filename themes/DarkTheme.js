@@ -6,10 +6,10 @@
 // https://github.com/callstack/react-native-paper/blob/main/src/styles/DarkTheme.tsx
 // https://github.com/callstack/react-native-paper/blob/main/src/styles/colors.tsx
 
-import Default from './Default';
+import DefaultTheme from './DefaultTheme';
 
 export default {
-    ...Default,
+    ...DefaultTheme,
     dark: true,
     mode: 'adaptive',
     colors: {
@@ -28,7 +28,7 @@ export default {
         notification: '#ff80ab',
     },
     screenOptions: {
-        ...Default.screenOptions,
+        ...DefaultTheme.screenOptions,
         headerStyle: {
             backgroundColor: '#BB86FC',
         },
