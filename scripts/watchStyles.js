@@ -36,36 +36,44 @@ function replace(inPath) {
 
 function convert(inPath, outPath) {
     const css = fs.readFileSync(inPath);
+    const styles = {};
     let root;
     try {
         root = postcss.parse(css);
     } catch (error) {
         console.error(error);
-        return;
     }
-    const styles = {};
-    for (const block of root.nodes) {
-        if (block instanceof postcss.Container) {
-            const props = [];
-            for (const item of block.nodes) {
-                if (item instanceof postcss.Declaration) {
-                    props.push([item.prop, item.value]);
+    if (root) {
+        for (const container of root.nodes) {
+            if (container instanceof postcss.Container) {
+                const props = [];
+                for (const declaration of container.nodes) {
+                    if (declaration instanceof postcss.Declaration) {
+                        props.push([declaration.prop, declaration.value]);
+                    }
                 }
-            }
-            try {
-                styles[block.selector] = transform(props);
-            } catch (error) {
-                console.error(error);
-                return;
+                try {
+                    styles[container.selector] = transform(props);
+                } catch (error) {
+                    console.error(error);
+                }
             }
         }
     }
-    const data = JSON.stringify(styles, null, 2);
-    fs.writeFileSync(outPath, data);
+    const content = JSON.stringify(styles, null, 2);
+    fs.writeFileSync(outPath, content);
+}
+
+function clean(outPath) {
+    let outDir = path.dirname(outPath);
+    while (fs.existsSync(outDir) && fs.readdirSync(outDir).length === 0) {
+        fs.rmSync(outDir, OPTIONS);
+        outDir = path.dirname(outDir);
+    }
 }
 
 if (fs.existsSync(NAME)) {
-    fs.rmdirSync(NAME, OPTIONS);
+    fs.rmSync(NAME, OPTIONS);
 }
 
 chokidar.watch('css', { ignored: ignore, awaitWriteFinish: true })
@@ -87,19 +95,14 @@ chokidar.watch('css', { ignored: ignore, awaitWriteFinish: true })
         if (fs.existsSync(outPath)) {
             fs.rmSync(outPath);
         }
-        let outDir = path.dirname(outPath);
-        while (fs.readdirSync(outDir).length === 0) {
-            if (fs.existsSync(outDir)) {
-                fs.rmdirSync(outDir);
-            }
-            outDir = path.dirname(outDir);
-        }
+        clean(outPath);
     })
-    .on('unlinkDir', (inDir) => {
-        console.log(`Removed ${inDir}`);
-        const paths = split(inDir);
-        const outDir = paths.join(path.sep);
-        if (fs.existsSync(outDir)) {
-            fs.rmdirSync(outDir, OPTIONS);
+    .on('unlinkDir', (inPath) => {
+        console.log(`Removed ${inPath}`);
+        const paths = split(inPath);
+        const outPath = paths.join(path.sep);
+        if (fs.existsSync(outPath)) {
+            fs.rmSync(outPath, OPTIONS);
         }
+        clean(outPath);
     });

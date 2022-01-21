@@ -6,7 +6,7 @@
   "scripts": {
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "start": "concurrently --raw --kill-others 'node scripts/watchFonts.js' 'expo start'",
+    "start": "concurrently --raw --kill-others 'node scripts/watchFonts.js' 'node scripts/watchStyles.js' 'expo start'",
     "web": "expo start --web"
   },
   "resolutions": {
