@@ -24,6 +24,7 @@
     "@hashiprobr/expo-use-picker": "~1.0.3",
     "@hashiprobr/expo-use-rest": "~1.0.4",
     "@hashiprobr/expo-use-scanner": "~1.0.10",
+    "@hashiprobr/react-create-state-context": "~1.0.5",
     "@hashiprobr/react-native-aspect-image": "~1.0.12",
     "@hashiprobr/react-native-aspect-view": "~1.0.15",
     "@hashiprobr/react-native-paper-datetimepicker": "~1.0.18",

@@ -2,7 +2,7 @@ import 'react-native-gesture-handler';
 
 import merge from 'deepmerge';
 
-import React, { useState, useMemo } from 'react';
+import React from 'react';
 
 import { Platform } from 'react-native';
 
@@ -16,14 +16,12 @@ import { DateTimeContainer } from '@hashiprobr/react-native-paper-datetimepicker
 
 import AppLoading from 'expo-app-loading';
 
-import { getFonts, useStyles, ThemeContext, ErrorBoundary } from './tools';
+import { getFonts, useStyles, useDark, DarkContext, ErrorBoundary } from './tools';
 
 import CustomDefaultTheme from './themes/DefaultTheme';
 import CustomDarkTheme from './themes/DarkTheme';
 
 import Main from './components/Main';
-
-import settings from './settings.json';
 
 // Ignoring a specific warning in the web. This is a
 // terrible hack, but I could not find a way around it
@@ -44,30 +42,36 @@ const fonts = getFonts();
 const defaultTheme = merge.all([NavigationDefaultTheme, PaperDefaultTheme, CustomDefaultTheme]);
 const darkTheme = merge.all([NavigationDarkTheme, PaperDarkTheme, CustomDarkTheme]);
 
-export default function App() {
+function App() {
     const loaded = useStyles(fonts);
 
-    const [dark, setDark] = useState(settings.dark);
-    const value = useMemo(() => [dark, setDark], [dark]);
-    const theme = value[0] ? darkTheme : defaultTheme;
+    const dark = useDark();
+
+    const theme = dark[0] ? darkTheme : defaultTheme;
 
     return (
         loaded.every((value) => value) ? (
-            <ThemeContext.Provider value={value}>
-                <PaperProvider theme={theme}>
-                    <SafeAreaProvider>
-                        <NavigationContainer theme={theme}>
-                            <DateTimeContainer theme={theme}>
-                                <ErrorBoundary>
-                                    <Main />
-                                </ErrorBoundary>
-                            </DateTimeContainer>
-                        </NavigationContainer>
-                    </SafeAreaProvider>
-                </PaperProvider>
-            </ThemeContext.Provider>
+            <PaperProvider theme={theme}>
+                <SafeAreaProvider>
+                    <NavigationContainer theme={theme}>
+                        <DateTimeContainer theme={theme}>
+                            <Main />
+                        </DateTimeContainer>
+                    </NavigationContainer>
+                </SafeAreaProvider>
+            </PaperProvider >
         ) : (
             <AppLoading />
         )
+    );
+}
+
+export default function BoundedApp() {
+    return (
+        <ErrorBoundary>
+            <DarkContext.Provider>
+                <App />
+            </DarkContext.Provider>
+        </ErrorBoundary>
     );
 }

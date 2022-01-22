@@ -1434,6 +1434,11 @@
   resolved "https://registry.yarnpkg.com/@hashiprobr/expo-use-scanner/-/expo-use-scanner-1.0.10.tgz#ef4480f164f2b0a00e9519ec034d4a10ad0b5638"
   integrity sha512-yXcW29ZVLF/hWRqyQj/18y/eAOVqGXad6qWLkGI5/hdA0HI8aysS6bWVaF8gJkGD0zzt7DNSaFGd/eM78E6MlQ==
 
+"@hashiprobr/react-create-state-context@~1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@hashiprobr/react-create-state-context/-/react-create-state-context-1.0.5.tgz#0fafe4c0574d6ae89445f30fcd69b02616b01383"
+  integrity sha512-AwX56nNE46THKyBihrAvDu7ZErz2KKs7vK+jjLI5x8hnFGhvAfRYb1w2RZHUH3IYRcvaRXgY9Hg9k7ezkL8aww==
+
 "@hashiprobr/react-native-aspect-image@~1.0.12":
   version "1.0.12"
   resolved "https://registry.yarnpkg.com/@hashiprobr/react-native-aspect-image/-/react-native-aspect-image-1.0.12.tgz#f1c295bb7ffb024d2da7afbe8a891788479d95a2"
@@ -3804,9 +3809,9 @@ ee-first@1.1.1:
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
 electron-to-chromium@^1.3.564, electron-to-chromium@^1.4.17:
-  version "1.4.49"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.49.tgz#5b6a3dc032590beef4be485a4b0b3fe7d0e3dfd7"
-  integrity sha512-k/0t1TRfonHIp8TJKfjBu2cKj8MqYTiEpOhci+q7CVEE5xnCQnx1pTa+V8b/sdhe4S3PR4p4iceEQWhGrKQORQ==
+  version "1.4.51"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.51.tgz#a432f5a5d983ace79278a33057300cf949627e63"
+  integrity sha512-JNEmcYl3mk1tGQmy0EvL5eik/CKSBuzAyGP0QFdG6LIgxQe3II0BL1m2zKc2MZMf3uGqHWE1TFddJML0RpjSHQ==
 
 elliptic@^6.5.3:
   version "6.5.4"

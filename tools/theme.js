@@ -1,9 +1,13 @@
-import { createContext, useContext } from 'react';
+import { useContext } from 'react';
 
-const ThemeContext = createContext();
+import createStateContext from '@hashiprobr/react-create-state-context';
+
+import settings from '../settings.json';
+
+const DarkContext = createStateContext(settings.dark);
 
 function useDark() {
-    return useContext(ThemeContext);
+    return useContext(DarkContext);
 }
 
-export { useDark, ThemeContext };
+export { useDark, DarkContext };
