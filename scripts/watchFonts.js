@@ -3,7 +3,7 @@ const path = require('path');
 const chokidar = require('chokidar');
 
 function write(inPath) {
-    const specs = JSON.parse(fs.readFileSync(inPath));
+    const specs = JSON.parse(fs.readFileSync(inPath, { encoding: 'utf8' }));
     const lines = ['export default {'];
     for (const name in specs.dependencies) {
         if (name.startsWith('@expo-google-fonts/')) {
