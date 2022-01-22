@@ -1469,6 +1469,11 @@
   resolved "https://registry.yarnpkg.com/@hashiprobr/react-native-rounded-view/-/react-native-rounded-view-1.0.6.tgz#14f9adbd3359fb7dbfcf1c09453799a34251d9fb"
   integrity sha512-tSYcMlrEIT5+C/JwEPhDG9pAgbd3FwCrvDxslu02RvnmbWK1tO52BydBs9uHsJsmkewygYpTLc2rgxE4fGBtvw==
 
+"@hashiprobr/react-use-emitter-and-listener@~1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@hashiprobr/react-use-emitter-and-listener/-/react-use-emitter-and-listener-1.0.3.tgz#ca3707b81d503abebe92db4de1c7ddffaf7377c2"
+  integrity sha512-RmRxlT6h8WQBsThLvz9jehBRlnWZK7vuVPyxU9k/1lVbsmqz/e2vf6+dEXHKRW5OxY3gvPsL+FVF6Wz3MmDY8Q==
+
 "@hashiprobr/react-use-loader@~1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@hashiprobr/react-use-loader/-/react-use-loader-1.0.2.tgz#9851bc54746b173e4c2a01a8ad1e96bbf5250033"
