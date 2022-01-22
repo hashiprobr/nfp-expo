@@ -112,3 +112,95 @@ Additional hooks
 
 * [expo-use-camera](https://github.com/hashiprobr/expo-use-camera) A React Hook
   for simplifying basic usage of expo-camera
+
+
+Additional tools
+----------------
+
+### React Hook to toggle dark mode
+
+In any component, you can import the `{ useDark }` hook from the `tools` folder.
+This hook returns the getter and setter of a boolean state
+
+``` js
+const [dark, setDark] = useDark();
+```
+
+that represents whether dark mode is being used.
+
+### Theme customization
+
+Both the default and dark themes are based on:
+
+* the default and dark themes of React Navigation;
+
+* the default and dark themes of React Native Paper;
+
+* the files `themes/DefaultTheme.js` and `themes/DarkTheme.js`,
+
+with priority increasing from top to bottom.
+
+The default mode is defined by the `"dark"` property of `settings.json`.
+
+### Installation of Google Fonts.
+
+1. Start with `npm start` instead of `expo start`.
+
+2. Search the [@expo-google-fonts Directory](https://directory.vercel.app/) to
+   discover the font name and variant names.
+
+3. Install the `@expo-google-fonts` package corresponding to the font name.
+
+4. Add to the object exported by `themes/GoogleFonts.js` an entry corresponding
+   to the font name and variant names. See an example below.
+
+   ``` js
+   export default {
+       'open-sans': [
+           'OpenSans_300Light',
+           'OpenSans_300Light_Italic',
+           'OpenSans_400Regular',
+           'OpenSans_400Regular_Italic',
+       ],
+       'open-sans-condensed': [
+           'OpenSansCondensed_300Light',
+           'OpenSansCondensed_300Light_Italic',
+       ],
+   };
+   ```
+
+5. You can now use any of the variant names as a value of `fontFamily`.
+
+Starting with `npm start` instead of `expo start` executes, in parallel, a
+watcher script that automatically detects which fonts are installed and
+generates a file that imports the corresponding modules.
+
+### Script to create a new navigation
+
+Running
+
+```
+npm run create-navigation <path> <type>
+```
+
+will automatically create the boilerplate for a navigation component in
+`components/<path>`. The `<type>` can be one of four values:
+
+* `stack`;
+
+* `drawer`;
+
+* `material-top-tabs`;
+
+* `material-bottom-tabs`.
+
+### Script to create a new component
+
+Running
+
+```
+npm run create-component <path>
+```
+
+will automatically create the boilerplate for a component in `components/<path>`
+and its corresponding StyleSheet in `styles/<path>`.
