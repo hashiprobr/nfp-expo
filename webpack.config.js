@@ -5,6 +5,7 @@ module.exports = async function (env, argv) {
         ...env,
         babel: {
             dangerouslyAddModulePathsToTranspile: [
+                '@hashiprobr/react-create-state-context',
                 '@hashiprobr/react-native-rounded-view',
                 '@hashiprobr/react-native-aspect-view',
                 '@hashiprobr/react-native-aspect-image',
