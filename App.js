@@ -16,12 +16,12 @@ import { DateTimeContainer } from '@hashiprobr/react-native-paper-datetimepicker
 
 import AppLoading from 'expo-app-loading';
 
-import Main from './components/Main';
-
 import { getFonts, useStyles, ThemeContext, ErrorBoundary } from './tools';
 
 import CustomDefaultTheme from './themes/DefaultTheme';
 import CustomDarkTheme from './themes/DarkTheme';
+
+import Main from './components/Main';
 
 import settings from './settings.json';
 

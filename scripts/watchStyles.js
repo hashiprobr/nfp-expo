@@ -35,7 +35,7 @@ function replace(inPath) {
 }
 
 function convert(inPath, outPath) {
-    const css = fs.readFileSync(inPath);
+    const css = fs.readFileSync(inPath, { encoding: 'utf8' });
     const styles = {};
     let root;
     try {
