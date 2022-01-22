@@ -81,6 +81,13 @@ Additional components
 Additional hooks
 ----------------
 
+* [react-create-state-context](https://github.com/hashiprobr/react-create-state-context)
+  React function for simplifying the creation of state contexts
+
+* [react-use-emitter-and-listener](https://github.com/hashiprobr/react-use-emitter-and-listener)
+  React Hooks for emitting and listening to events with a syntax inspired by
+  contexts and effects
+
 * [react-use-refs](https://github.com/hashiprobr/react-use-refs) A React Hook
   for using multiple refs with a clean sintax
 
