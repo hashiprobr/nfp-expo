@@ -1469,10 +1469,10 @@
   resolved "https://registry.yarnpkg.com/@hashiprobr/react-native-rounded-view/-/react-native-rounded-view-1.0.6.tgz#14f9adbd3359fb7dbfcf1c09453799a34251d9fb"
   integrity sha512-tSYcMlrEIT5+C/JwEPhDG9pAgbd3FwCrvDxslu02RvnmbWK1tO52BydBs9uHsJsmkewygYpTLc2rgxE4fGBtvw==
 
-"@hashiprobr/react-use-emitter-and-listener@~1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@hashiprobr/react-use-emitter-and-listener/-/react-use-emitter-and-listener-1.0.3.tgz#ca3707b81d503abebe92db4de1c7ddffaf7377c2"
-  integrity sha512-RmRxlT6h8WQBsThLvz9jehBRlnWZK7vuVPyxU9k/1lVbsmqz/e2vf6+dEXHKRW5OxY3gvPsL+FVF6Wz3MmDY8Q==
+"@hashiprobr/react-use-emitter-and-listener@~1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@hashiprobr/react-use-emitter-and-listener/-/react-use-emitter-and-listener-1.0.4.tgz#b974b0ab8b06bf22518cc8681f422f2d6a97b68f"
+  integrity sha512-qo+ZvFQctzm4sFXNHzDDrFBUQkhMN54/oVqP38oQd2MEi2tUc4/K6EGn12mvfhkZYGiwKZHZWa2ERSuJyjCB9Q==
 
 "@hashiprobr/react-use-loader@~1.0.2":
   version "1.0.2"
@@ -5244,7 +5244,7 @@ is-color-stop@^1.0.0:
     rgb-regex "^1.0.1"
     rgba-regex "^1.0.0"
 
-is-core-module@^2.8.0:
+is-core-module@^2.8.1:
   version "2.8.1"
   resolved "https://registry.yarnpkg.com/is-core-module/-/is-core-module-2.8.1.tgz#f59fdfca701d5879d0a6b100a40aa1560ce27211"
   integrity sha512-SdNCUs284hr40hFTFP6l0IfZ/RSrMXF3qgoRHd3/79unUTvrFO/JoXwkGm+5J/Oe3E/b5GsnG330uUNgRpu1PA==
@@ -8211,11 +8211,11 @@ resolve-url@^0.2.1:
   integrity sha1-LGN/53yJOv0qZj/iGqkIAGjiBSo=
 
 resolve@^1.1.6, resolve@^1.13.1, resolve@^1.14.2, resolve@^1.3.2:
-  version "1.21.1"
-  resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.21.1.tgz#1a88c73f5ca8ab0aabc8b888c4170de26c92c4cc"
-  integrity sha512-lfEImVbnolPuaSZuLQ52cAxPBHeI77sPwCOWRdy12UG/CNa8an7oBHH1R+Fp1/mUqSJi4c8TIP6FOIPSZAUrEQ==
+  version "1.22.0"
+  resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.22.0.tgz#5e0b8c67c15df57a89bdbabe603a002f21731198"
+  integrity sha512-Hhtrw0nLeSrFQ7phPp4OOcVjLPIeMnRlr5mcnVuMe7M/7eBn98A3hmFRLoFo3DLZkivSYwhRUJTyPyWAk56WLw==
   dependencies:
-    is-core-module "^2.8.0"
+    is-core-module "^2.8.1"
     path-parse "^1.0.7"
     supports-preserve-symlinks-flag "^1.0.0"
 
