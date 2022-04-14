@@ -8,7 +8,7 @@
     "create-component": "node scripts/createComponent.js",
     "create-navigation": "node scripts/createNavigation.js",
     "ios": "expo start --ios",
-    "start": "concurrently --raw --kill-others 'node scripts/watchFonts.js' 'expo start'",
+    "start": "concurrently --raw --kill-others \"node scripts/watchFonts.js\" \"expo start\"",
     "web": "expo start --web"
   },
   "resolutions": {
