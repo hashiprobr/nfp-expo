@@ -2,7 +2,7 @@ import 'react-native-gesture-handler';
 
 import merge from 'deepmerge';
 
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import { Platform } from 'react-native';
 
@@ -14,7 +14,7 @@ import { Provider as PaperProvider, DefaultTheme as PaperDefaultTheme, DarkTheme
 
 import { DateTimeContainer } from '@hashiprobr/react-native-paper-datetimepicker';
 
-import AppLoading from 'expo-app-loading';
+import * as SplashScreen from 'expo-splash-screen';
 
 import { getFonts, useStyles, useDark, DarkContext, ErrorBoundary } from './tools';
 
@@ -37,6 +37,8 @@ if (Platform.OS === 'web') {
     };
 }
 
+SplashScreen.preventAutoHideAsync();
+
 const fonts = getFonts();
 
 const defaultTheme = merge.all([NavigationDefaultTheme, PaperDefaultTheme, CustomDefaultTheme]);
@@ -49,20 +51,22 @@ function App() {
 
     const theme = dark[0] ? darkTheme : defaultTheme;
 
+    useEffect(() => {
+        if (loaded.every((value) => value)) {
+            SplashScreen.hideAsync();
+        }
+    }, loaded);
+
     return (
-        loaded.every((value) => value) ? (
-            <PaperProvider theme={theme}>
-                <SafeAreaProvider>
-                    <NavigationContainer theme={theme}>
-                        <DateTimeContainer theme={theme}>
-                            <Main />
-                        </DateTimeContainer>
-                    </NavigationContainer>
-                </SafeAreaProvider>
-            </PaperProvider >
-        ) : (
-            <AppLoading />
-        )
+        <PaperProvider theme={theme}>
+            <SafeAreaProvider>
+                <NavigationContainer theme={theme}>
+                    <DateTimeContainer theme={theme}>
+                        <Main />
+                    </DateTimeContainer>
+                </NavigationContainer>
+            </SafeAreaProvider>
+        </PaperProvider >
     );
 }
 
